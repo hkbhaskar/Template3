@@ -1,0 +1,141 @@
+footer{
+    background:#0D2252;
+    padding:3.125rem 0;
+
+    .wrapper{
+        display:block;
+        margin:1.25rem 0;
+        color:$color-primary;
+
+        .send-button-ce{
+            margin:.3125rem 0;
+            
+            .form-control{
+                background:#263964;
+                color:$color-primary;
+            }
+
+            i{
+                right:0;
+                top:0;
+                background: $icons-color;
+                color:$color-primary;
+                width:1.875rem;
+                font-size:1.25rem;
+            }
+        }
+
+        h2{
+            font-size:1.25rem;
+            font-weight:bold;
+            text-transform:uppercase;
+            display:inline-block;
+            width: 100%;
+            margin:0 0 .625rem 0;
+
+            span{
+                color:$icons-color;
+                margin-left:.3125rem;
+            }
+
+        }
+
+        p{
+            color:#ddd;
+            font-size:.9375rem;
+            display:block;
+            margin:0 0 .625rem 0;    
+        }
+
+        span{
+            font-size:.9375rem;
+            margin-bottom:.3125rem;
+        }
+
+        .content{
+            display:block;
+            width:100%;
+            
+            li{
+                position: relative;
+                color:#ddd;
+                font-size:.9375rem;
+                display:block;
+                overflow:hidden;
+                text-overflow: ellipsis;
+                margin:.625rem 0;
+                padding:.3125rem 0 .3125rem 1.875rem;
+
+                i{
+                    position: absolute;
+                    left:0;
+                    color:$icons-color;
+                    font-size:1.25rem;
+                    display:flex;
+                    align-items: center;
+                    height:100%;
+                }
+            }
+        }
+
+        .insta{
+            margin:.3125rem 0;
+
+            li{
+                display:inline-block;
+                width:80px;
+                padding-right:.125rem;
+                margin:.1875rem 0;
+                position: relative;
+                transition:all ease .5s;
+
+                &:hover{
+                    &::before{
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+
+                &::before{
+                    content: "\f16d";
+                    position: absolute;
+                    font-family: "Font Awesome 5 Brands";
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    width: 100%;
+                    background: rgba(0,0,0,.6);
+                    color:$icons-color;
+                    visibility: hidden;
+                    opacity:0;
+                    transition: all ease-in-out .5s;
+                }
+            }
+        }
+    }
+}
+
+.copy-right{
+    position: relative;
+    display:block;
+    padding:.9375rem 0;
+    background:#01080D;
+
+    .wrapper{
+        display:block;
+        text-align:center;
+        padding:.625rem 0;
+        
+        p{
+            font-size:.9375rem;
+            color:$color-primary;
+            
+            a{
+                margin-left:.5rem;
+                color:$icons-color;
+                font-weight:bold;
+            }
+        }
+    }
+}
